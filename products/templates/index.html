@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="jumbotron jumbotron-fluid text-center">
+      <div class="container">
+        <h1 class="display-4">All Products</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </div>
+
+    <div class="container">
+	    <div class="row">
+			{% for product in products %}
+				<div class="col-md-3" style="margin-bottom: 10px; padding: 0px 5px;">
+					<div class="card" style="">
+                        <div style="background: #020202 url({{ product.image_url }}); background-size: cover; background-position: center; background-repeat: no-repeat; width: 100%; height: 250px;"></div>
+						<div class="card-body">
+							<h5 class="card-title">{{ product.name }} - <strong>${{ product.price }}</strong></h5>
+							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+								card's content.</p>
+							<a href="#" class="btn btn-primary">Add to cart</a>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+    </div>
+{% endblock %}
