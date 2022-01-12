@@ -19,7 +19,7 @@ To setup the PyShop project, here is the following guidelines:
 * Add Products under the <b>Products</b> Menu, Add Offers also.
 * Visit Products Page using <code>http://127.0.0.1:8000/products/</code>
 * Visit New Arrival (Products) Page using <code>http://127.0.0.1:8000/products/new</code>
-* Wish codebase to extend code? just say hi
+* Wish to extend codebase/project? just say hi
 
 
 ## Contributing
